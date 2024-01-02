@@ -1,0 +1,91 @@
+body {
+    line-height: 24px;
+    font-size: 14px;
+    color: #b6b7b9;
+    background: wh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+
+}
+
+.header {
+    padding: 18px 0;
+    width: 100%;
+    border-bottom: 1px solid #252838;
+    z-index: 99;
+}
+
+
+/*banner*/
+
+.banner {
+    width: 100%;
+    height: 450px;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.list li {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    font: 14px/2.5em "微软雅黑";
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%);
+    bottom: 40px;
+    z-index: 2;
+}
+
+.btn li {
+    float: left;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: salmon;
+    margin: 0 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn .on {
+    background: slateblue;
+}
+
+.list .on {
+    z-index: 1;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    width: 30px;
+    text-align: center;
+    line-height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.right {
+    right: 14%;
+}
+
+.left {
+    left: 14%;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,121 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  .comment-container {
+	background-color: #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	max-width: 600px;
+	width: 100%;
+	position: relative;
+	border-radius: 10px;
+  }
+  
+  .comment {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	transition: all 0.3s ease;
+  }
+  
+  .comment-enter-active, .comment-leave-active {
+	transition: opacity 0.5s;
+  }
+  .comment-enter, .comment-leave-to {
+	opacity: 0;
+  }
+  
+  .comment-info {
+	color: #ff6e80;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  .comment-text {
+	color: #555;
+	font-size: 16px;
+	line-height: 1.6;
+  }
+  
+  .comment-form {
+	margin-top: 30px;
+  }
+  
+  h3 {
+	color: #ff6e80;
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 8px;
+	color: #555;
+  }
+  
+  input,
+  textarea {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+  }
+  
+  button {
+	background-color: #ff6e80;
+	color: #fff;
+	padding: 15px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 8px;
+	transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #d81b60;
+  }
+  
+  .floating-elements {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -1;
+  }
+  
+  .floating-elements::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 0 50px rgba(124, 123, 123, 0.5);
+	transform: translateZ(0);
+	z-index: -1;
+	animation: float 5s infinite linear alternate;
+  }
+  
+  @keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+  }
+  
